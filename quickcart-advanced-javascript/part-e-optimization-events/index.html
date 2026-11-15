@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickCart - Performance and DOM Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>QuickCart</h1>
+        <p class="subtitle">Performance Optimization & DOM Events</p>
+
+        <section class="card">
+            <h2>1. Debounced Product Search</h2>
+            <p>Search runs 500 milliseconds after you stop typing.</p>
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <p id="searchMessage" class="message">Start typing to search.</p>
+        </section>
+
+        <section class="card">
+            <h2>2. Throttled Scroll Event</h2>
+            <p>Scroll this page. The scroll handler runs at most once every second.</p>
+            <p id="scrollMessage" class="message">Scroll events: 0</p>
+        </section>
+
+        <section class="card">
+            <h2>3. Memoization</h2>
+            <p>Open the browser console to see cached and fresh calculations.</p>
+            <p id="memoMessage" class="message">Discount calculation examples are logged in the console.</p>
+        </section>
+
+        <section class="card">
+            <h2>4. Event Bubbling and stopPropagation()</h2>
+            <p>Click the button to see the child and parent handlers. Then stop propagation.</p>
+            <div id="bubbleParent" class="event-area">
+                <button id="bubbleButton" type="button">Click to demonstrate bubbling</button>
+                <button id="stopButton" type="button">Click to stop bubbling</button>
+            </div>
+            <p id="bubbleMessage" class="message">Event messages will appear here.</p>
+        </section>
+
+        <section class="card">
+            <h2>5. Event Delegation - Remove Products</h2>
+            <p>One click listener on the parent handles all Remove buttons.</p>
+            <ul id="productList" class="product-list">
+                <li class="product-item"><span>Laptop</span><button class="remove-button" type="button">Remove</button></li>
+                <li class="product-item"><span>Mouse</span><button class="remove-button" type="button">Remove</button></li>
+                <li class="product-item"><span>Keyboard</span><button class="remove-button" type="button">Remove</button></li>
+            </ul>
+            <p id="removeMessage" class="message">Select a product to remove it.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
