@@ -141,6 +141,12 @@ Concepts practised: - Debouncing with a 500 ms delay - Throttling with a
 ![Part E search and
 scroll](screenshots/part-e-debounced-search-and-scroll.png)
 
+
+**Memoization – Console Output**
+
+![Memoization console output](screenshots/part-e-memoization-console.png)
+
+
 **Event bubbling and product removal**
 
 ![Part E event bubbling and
